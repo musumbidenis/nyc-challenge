@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nyc_governance_app/main.dart';
 
 class Contact extends StatefulWidget {
   @override
@@ -23,7 +24,7 @@ class _ContactState extends State<Contact> {
       leading: GestureDetector(
         onTap: () {
           /*Navigate to the Home page */
-          // Navigator.push(context, MaterialPageRoute(builder: (context) => Main()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()));
         },
         child: Icon(
           Icons.arrow_back_ios,
@@ -108,6 +109,7 @@ class _ContactState extends State<Contact> {
                 ),
               ),
             ),
+            SizedBox(height: 20.0)
           ]
         ),
       )
